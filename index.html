@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm: Secure & Fast UPI Payments, Recharge Mobile & Pay Bills</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <article class="logo">
+            <svg width="180" height="55" viewBox="0 0 180 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M101.657 24.4917C99.516 18.8294 92.5706 21.3677 91.9291 24.1988C91.0435 21.1864 84.2725 18.941 82.2014 24.4986C79.9002 30.6909 91.1272 36.2416 91.9291 37.1551C92.731 36.4299 103.958 30.5863 101.657 24.4986V24.4917Z" fill="#EC184A"/>
+                <path d="M153.015 37.5109H149.633L154.34 20.5171H157.722L153.015 37.5109Z" fill="#6D6E70"/>
+                <path d="M151.257 21.054C151.02 20.7333 150.658 20.5659 150.17 20.5659H131.565L130.645 23.8922H134.027H147.569L146.585 27.4485H133.043L129.661 27.4415L126.851 37.5806H130.233L132.116 30.7747H147.338C147.813 30.7747 148.259 30.6144 148.684 30.2866C149.103 29.9589 149.382 29.5614 149.514 29.0872L151.397 22.2813C151.536 21.7862 151.488 21.3748 151.257 21.054Z" fill="#6D6E70"/>
+                <path d="M124.885 36.451C124.696 37.1274 124.083 37.5876 123.385 37.5876H105.931C105.457 37.5876 105.102 37.4272 104.871 37.0995C104.641 36.7787 104.592 36.3743 104.725 35.9001L108.986 20.5659H112.375L108.567 34.2614H122.116L125.924 20.5659H129.313L124.899 36.451H124.885Z" fill="#6D6E70"/>
+                <path d="M163.565 20.5518L167.847 29.0661L158.844 37.5874L163.565 20.5518Z" fill="#008B44"/>
+                <path d="M160.56 20.5518L164.841 29.0661L155.832 37.5874L160.56 20.5518Z" fill="#F37920"/>
+                <path d="M76.581 23.5508C75.9952 21.8632 74.4053 20.6499 72.5365 20.6499H72.4947C71.2813 20.6499 70.1865 21.1589 69.4055 21.9818C68.6245 21.1589 67.5297 20.6499 66.3164 20.6499H66.2745C65.2076 20.6499 64.2314 21.0474 63.4783 21.6959V21.3681C63.4504 21.0334 63.1854 20.7754 62.8507 20.7754H59.9847C59.636 20.7754 59.3501 21.0613 59.3501 21.417V37.1625C59.3501 37.5182 59.636 37.8041 59.9847 37.8041H62.8507C63.1714 37.8041 63.4364 37.56 63.4783 37.2462V25.9496C63.4783 25.9077 63.4783 25.8729 63.4783 25.838C63.5271 25.3359 63.8897 24.9175 64.4685 24.8687H64.9984C65.2425 24.8896 65.4447 24.9733 65.6051 25.1058C65.8561 25.308 65.9956 25.6149 65.9956 25.9565L66.0095 37.2044C66.0095 37.56 66.2955 37.8459 66.6441 37.8459H69.5101C69.8518 37.8459 70.1238 37.574 70.1377 37.2323V25.9356C70.1377 25.566 70.3051 25.2244 70.6049 25.0291C70.7514 24.9315 70.9257 24.8687 71.1279 24.8478H71.6579C72.2785 24.9036 72.6551 25.3778 72.6481 25.9356L72.662 37.1695C72.662 37.5252 72.9479 37.8111 73.2966 37.8111H76.1626C76.5113 37.8111 76.7972 37.5252 76.7972 37.1695V25.0849C76.7972 24.262 76.7065 23.9134 76.581 23.5508Z" fill="#00BCF1"/>
+                <path d="M57.1815 20.817H55.5428V18.1323C55.5428 17.7976 55.2848 17.5396 54.964 17.5396C54.9292 17.5396 54.8873 17.5396 54.8525 17.5535C53.0325 18.0556 53.402 20.6008 50.0828 20.8239H49.762C49.7132 20.8239 49.6714 20.8239 49.6225 20.8379C49.3366 20.9007 49.1274 21.1587 49.1274 21.4655V24.3664C49.1274 24.722 49.4133 25.0079 49.762 25.0079H51.4914V37.3017C51.4914 37.6504 51.7703 37.9363 52.119 37.9363H54.9501C55.2988 37.9363 55.5777 37.6504 55.5777 37.3017V25.0009H57.1815C57.5302 25.0009 57.8161 24.715 57.8161 24.3594V21.4585C57.8161 21.1029 57.5302 20.817 57.1815 20.817Z" fill="#00BCF1"/>
+                <path d="M46.8681 20.8169H44.0021C43.6534 20.8169 43.3675 21.1028 43.3675 21.4584V27.4554C43.3675 27.825 43.0677 28.1249 42.6981 28.1249H41.4987C41.1291 28.1249 40.8293 27.825 40.8293 27.4485L40.8153 21.4584C40.8153 21.1028 40.5294 20.8169 40.1807 20.8169H37.3147C36.9661 20.8169 36.6802 21.1028 36.6802 21.4584V28.0272C36.6802 30.5237 38.4374 32.3018 40.906 32.3018C40.906 32.3018 42.7608 32.3018 42.8166 32.3158C43.1513 32.3576 43.4094 32.6365 43.4094 32.9852C43.4094 33.3339 43.1513 33.6128 42.8236 33.6546C42.8097 33.6546 42.7957 33.6546 42.7748 33.6616L38.5839 33.6756C38.2352 33.6756 37.9493 33.9615 37.9493 34.3171V37.211C37.9493 37.5666 38.2352 37.8525 38.5839 37.8525H43.2699C45.6059 37.8525 47.4957 35.9349 47.4957 33.5779V21.4584C47.4957 21.1028 47.2098 20.8169 46.8611 20.8169H46.8681Z" fill="#172B75"/>
+                <path d="M19.3792 20.8169H13.1172C12.7755 20.8169 12.4966 21.0958 12.4966 21.4445V24.2826V24.2965C12.4966 24.3175 12.4966 24.3314 12.4966 24.3454V37.197C12.4966 37.5457 12.7546 37.8316 13.0754 37.8386H15.9902C16.3388 37.8386 16.6247 37.5527 16.6247 37.197L16.6387 32.79H19.3792C21.6734 32.79 23.2702 31.1791 23.2702 28.8501V24.7638C23.2702 22.4347 21.6734 20.8169 19.3792 20.8169ZM19.1281 26.1305V27.9157C19.1281 28.2922 18.8283 28.5921 18.4587 28.5921H16.6387V25.0078H18.4587C18.8283 25.0078 19.1281 25.3146 19.1281 25.6842V26.1235V26.1305Z" fill="#172B75"/>
+                <path d="M30.5645 20.8379H26.5897C26.2411 20.8379 25.9552 21.1098 25.9552 21.4376V22.5882V22.6021V24.1572C25.9552 24.5128 26.255 24.7917 26.6316 24.7917H30.4181C30.7179 24.8405 30.955 25.0567 30.9899 25.4054V25.7819C30.955 26.1097 30.7249 26.3468 30.439 26.3746H28.5632C26.0668 26.3746 24.2886 28.0482 24.2886 30.4052V33.7802C24.2886 36.1232 25.8157 37.7829 28.2912 37.7829H33.4863C34.4207 37.7829 35.1738 37.0716 35.1738 36.186V25.1892C35.1738 22.5184 33.814 20.8379 30.5645 20.8379ZM31.0178 32.9365V33.3897C31.0178 33.4246 31.0178 33.4595 31.0038 33.4943C31.0038 33.5292 30.9899 33.5571 30.9759 33.585C30.8853 33.836 30.6342 34.0243 30.3414 34.0243H29.1489C28.7724 34.0243 28.4725 33.7384 28.4725 33.3897V32.8249V31.3675V30.9142C28.4725 30.5586 28.7724 30.2797 29.1489 30.2797H30.3414C30.7109 30.2797 31.0178 30.5656 31.0178 30.9142V32.9365Z" fill="#172B75"/>
+            </svg>
+        </article>
+        <nav>
+            <ol>
+                <li><a href="#">Paytm for Consumer</a></li>
+                <li><a href="#">Paytm For Business</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Career</a></li>
+            </ol>
+        </nav>
+        <article class="user">
+            <a href="#">Sign In
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="17" cy="17" r="17" fill="#002970" />
+                    <circle cx="17" cy="14.7331" r="7.93333" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07898 28.048C6.58399 23.4894 11.4312 20.3999 16.9999 20.3999C22.5687 20.3999 27.4159 23.4894 29.9209 28.048C26.8029 31.691 22.1711 33.9999 16.9999 33.9999C11.8288 33.9999 7.19693 31.691 4.07898 28.048Z" fill="white"/>
+                </svg>
+            </a>
+        </article>
+    </header>
+    <main>
+        <section class="bar">
+            <article><span>No Wallet KYC Required </span><span>😊</span> to pay using UPI on Paytm. <a href="#">Learn more.</a></article>
+        </section>
+        <section class="home">
+            <img src="./img/paytm.jpg" alt="paytm">
+            <div class="container">
+                <h1>India's Most-loved Payments App</h1>
+                <h5>Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual funds, and do a lot more.</h5>
+                <article class="pay_app">Download Paytm App
+                    <a href="#">
+                        <svg width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z"></path></svg>
+                    </a>
+                    <a href="#">
+                        <svg width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z"></path></svg>
+                    </a>
+                </article>
+            </div>
+            <img src="./img/phone.jpg" alt="phone">
+        </section>
+        <section class="home1">
+            <h1>Recharge & Pay Bills on Paytm.</h1>
+            <div class="container1">
+                <div>
+                    <ol>
+                        <li><img src="./img/img1.png" alt="img1"></li>
+                        <li>Recharge 
+                            <span>Prepaid </span>
+                            <span>Mobile
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_d_6104_7102)">
+                                    <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                                    <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </span>
+                            
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <ol>
+                        <li><img src="./img/img2.png" alt="img2"></li>
+                        <li>Pay 
+                            <span>Electricity </span>
+                            <span>Bill
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_d_6104_7102)">
+                                    <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                                    <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </span>
+                             
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <ol>
+                        <li><img src="./img/img3.png" alt="img3"></li>
+                        <li>Recharge 
+                            <span>DTH </span>
+                            <span>Connection
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_d_6104_7102)">
+                                    <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                                    <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </span>
+                            
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <ol>
+                        <li><img src="./img/img4.png" alt="img4"></li>
+                        <li>Book 
+                            <span>Gas </span>
+                            <span>Cylinder
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_d_6104_7102)">
+                                    <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                                    <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <ol>
+                        <li><img src="img/img5.png" alt="img5"></li>
+                        <li class="po">Pay 
+                            <span>Broadband & Landline </span>
+                            <span>Bill
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_d_6104_7102)">
+                                    <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                                    <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <ol>
+                        <li><img src="./img/img6.png" alt="img6"></li>
+                        <li>Pay 
+                            <span>Education </span>
+                            <span>Fee
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_d_6104_7102)">
+                                    <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                                    <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <ol>
+                        <li><img src="./img/img7.png" alt="img7"></li>
+                        <li><span>All Payment </span>
+                            <span>Services
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_d_6104_7102)">
+                                    <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                                    <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="home1 home2">
+            <h1>Book & Buy on Paytm.</h1>
+            <div class="container1">
+                <div>
+                    <ol>
+                        <li><img src="./img/img11.png" alt="img1"></li>
+                        <li><span>Movie </span>
+                            <span>Tickets
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_d_6104_7102)">
+                                    <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                                    <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <ol>
+                        <li><img src="./img/img12.png" alt="img2"></li>
+                        <li><span>Flight </span>
+                            <span>Tickets
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_d_6104_7102)">
+                                    <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                                    <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg> 
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <ol>
+                        <li><img src="./img/img13.png" alt="img3"></li>
+                        <li><span>Bus </span>
+                            <span>Tickets
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_d_6104_7102)">
+                                    <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                                    <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <ol>
+                        <li><img src="./img/train.jpg" alt="img4"></li>
+                        <li><span>Train </span>
+                            <span>Tickets
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_d_6104_7102)">
+                                    <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                                    <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <ol>
+                        <li><img src="img/img15.png" alt="img5"></li>
+                        <li><span>Buy </span>
+                            <span>Insurance
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_d_6104_7102)">
+                                    <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                                    <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <ol>
+                        <li><img src="./img/img16.png" alt="img6"></li>
+                        <li><span>International </span>
+                            <span>Flights
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_d_6104_7102)">
+                                    <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                                    <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <ol>
+                        <li><img src="./img/img17.jpg" alt="img7"></li>
+                        <li><span>Invest in </span>
+                            <span>Stocks
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_d_6104_7102)">
+                                    <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                                    <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="home3">
+            <h1>Paytm Payment Instruments</h1>
+            <article class="ho3 h31">
+                <div>
+                    <img src="./img/paytm wallet.png" alt="wallet">
+                    <h4>Paytm Wallet</h4>
+                    <h2>The Fastest Way to Pay In-store & Online.</h2>
+                    <p>Load up your Paytm Wallet for free and make payments in a jiffy at over 21 million stores, websites and apps.</p>
+                    <section class="pay_app">Download Paytm App
+                        <a href="#">
+                            <svg width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z"></path></svg>
+                        </a>
+                        <a href="#">
+                            <svg width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z"></path></svg>
+                        </a>
+                    </section>
+                </div>
+                <div>
+                    <img src="./img/img31.png" alt="img31">
+                </div>
+            </article>
+            <article class="ho3 h32">
+                <div>
+                    <img src="./img/upi.png" alt="upi">
+                    <h4>UPI Money Transfer</h4>
+                    <h2>Pay anyone directly from your bank account.</h2>
+                    <p>Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm Wallet or Directly from your Bank Account. Plus, send & receive money from anyone.</p>
+                    <section class="pay_app">Download Paytm App
+                        <a href="#">
+                            <svg width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z"></path></svg>
+                        </a>
+                        <a href="#">
+                            <svg width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z"></path></svg>
+                        </a>
+                    </section>
+                </div>
+                <div>
+                    <img src="./img/img32.jpg" alt="img32">
+                </div>
+            </article>
+            <article class="ho3 h33">
+                <div>
+                    <img src="./img/postpaid.png" alt="postpaid">
+                    <h2>Want it?</h2>
+                    <h2>No more waiting for it.</h2>
+                    <p>With Paytm Postpaid, your wishlist doesn't have to be on the waitlist. Shop for the things you want today and pay for them next month.</p>
+                    <article class="more">
+                        <h6>Learn More</h6>
+                        <article class="line1"></article>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                            <g filter="url(#filter0_d_6104_7102)">
+                            <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                            <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                        </svg>
+                    </article>
+                </div>
+                <div>
+                    <img src="./img/img33.png" alt="img33">
+                </div>
+            </article>
+            <div class="card">
+                <div class="ho3_1 h34">
+                    <img src="./img/hdfc.png" alt="hdfc">
+                    <h2>Unlimited Cashback</h2>
+                    <h2>Every time</h2>
+                    <p>Paytm HDFC Bank Select Credit Card. A card with assured Cashback and incredible offers.</p>
+                    <img src="./img/left card.png" alt="leftcard">
+                </div>
+                <div class="ho3_1 h35">
+                    <img src="./img/sbi.png" alt="sbi">
+                    <h2>India’s Most</h2>
+                    <h2>Sincere Credit Card</h2>
+                    <p>Paytm SBI Card SELECT - With Intelligent Features & Great Rewards that Never Expire</p>
+                    <img src="./img/right card.png" alt="rightcard">
+                </div>
+            </div>
+        </section>
+        <section class="home4">
+            <h1>Financial Services by Paytm</h1>
+            <article class="hom4 ho41">
+                <div>
+                    <img src="./img/payment.png" alt="payment">
+                    <h2>India's most sincere bank.</h2>
+                    <p>
+                        Paytm Payments Bank offers secure, transparent and risk-free banking at your fingertips. With instant account opening, virtual debit card and zero balance requirements, experience the future of banking today.
+                    </p>
+                    <article class="more">
+                        <h6>Learn More</h6>
+                        <article class="line1"></article>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                            <g filter="url(#filter0_d_6104_7102)">
+                            <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                            <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                        </svg>
+                    </article>
+                </div>
+                <div class="ima">
+                    <img src="./img/payment1.png" alt="payment1">
+                </div>
+            </article>
+            <article class="hom4 ho42">
+                <div>
+                    <img src="./img/money.png" alt="money">
+                    <h2>Build Long-term Wealth & Achieve your Goals.</h2>
+                    <p>Investing on Paytm Money is transparent, low-cost and commission-free. Buy stocks & mutual funds that can help you create wealth & realise your dreams.</p>
+                    <article class="more">
+                        <h6>Learn More</h6>
+                        <article class="line1"></article>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                            <g filter="url(#filter0_d_6104_7102)">
+                            <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                            <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                        </svg>
+                    </article>
+                </div>
+                <div class="ima">
+                    <img src="./img/money1.png" alt="money1">
+                </div>
+            </article>
+            <article class="hom4 ho43">
+                <div>
+                    <img src="./img/insurance.jpeg" alt="insurance">
+                    <h2>Insurance made easy.</h2>
+                    <p>Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance removes the worry of getting insured by making it simple, convenient & easy-to-understand.</p>
+                    <article class="more">
+                        <h6>Learn More</h6>
+                        <article class="line1"></article>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                            <g filter="url(#filter0_d_6104_7102)">
+                            <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                            <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                        </svg>
+                    </article>
+                </div>
+                <div class="ima">
+                    <img src="./img/insurance1.png" alt="insurance1">
+                </div>    
+            </article>
+            <article class="hom4 ho44">
+                <div>
+                    <img src="./img/loan.png" alt="loan">
+                    <h2>Get a Personal Loan in 2 Minutes.</h2>
+                    <p>Paytm offers India's quickest multi-purpose, hassle-free loan. It is 100% digital, transparent and paperless.</p>
+                    <article class="more">
+                        <h6>Learn More</h6>
+                        <article class="line1"></article>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                            <g filter="url(#filter0_d_6104_7102)">
+                            <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                            <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                        </svg>
+                    </article>
+                </div>
+                <div class="ima">
+                    <img src="./img/loan1.png" alt="loan1">
+                </div>
+            </article>
+        </section>
+        <section class="home5">
+                <h6>Business Services by Paytm</h2>
+            <article class="ho51">
+                <div>
+                    <h3>Accept payments online with ease</h3>
+                    <p>Grow your business with the payment gateway that powers India’s largest brands and even the Paytm App</p>
+                    <article class="more">
+                        <h6>Learn More</h6>
+                        <article class="line1"></article>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                            <g filter="url(#filter0_d_6104_7102)">
+                            <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                            <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                        </svg>
+                    </article>
+                </div>
+                <div>  
+                    <img src="./img/ho51.jpg" alt="ho51">
+                </div>
+            </article>
+            <article class="ho52">
+                <div>
+                    <h3>In-shop payments powered by Paytm.</h3>
+                    <p>Millions of small & big businesses use Paytm to accept payments anywhere any time with a wide range of solutions for all kind of merchants</p>
+                    <article class="more">
+                        <h6>Learn More</h6>
+                        <article class="line1"></article>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 46 46" fill="none">
+                            <g filter="url(#filter0_d_6104_7102)">
+                            <circle cx="23" cy="19" r="19" fill="url(#paint0_linear_6104_7102)"/>
+                            <path d="M17.7076 20.7959L22.8399 15.6507C23.303 15.1864 24.0545 15.1859 24.5182 15.6496L29.657 20.7884" stroke="white" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                        </svg>
+                    </article>
+                </div>
+                <div>
+                    <img src="./img/ho52.png" alt="ho52">
+                </div>
+            </article>
+        </section>
+        <section class="home6">
+            <h2>Business Tools to help your business grow</h2>
+            <article class="hom6">
+                <ol class="ho6 ho61">
+                    <li><img src="./img/ho61.png" alt="ho61"></li>
+                    <li><h3>POS Billing Software</h3></li>
+                    <li><p>Say Hello to Smart Retail Business Management</p></li>
+                    <li><a href="#">Learn More</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="13" viewBox="0 0 22 21" fill="none">
+                            <path d="M10.8969 2.9999L18.9998 10.6977L10.8969 18.3955"  stroke-width="4.19118" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="2.09559" y1="10.6977" x2="14.6691" y2="10.6977"  stroke-width="4.19118" stroke-linecap="round"/>
+                        </svg>
+                    </li>
+                </ol>
+                <ol class="ho6 ho62">
+                    <li><img src="./img/ho62.png" alt="ho62"></li>
+                    <li><h3>Paytm for Business App</h3></li>
+                    <li><p>Everything you need to manage your business on your phone</p></li>
+                    <li><a href="#">Learn More</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="13" viewBox="0 0 22 21" fill="none">
+                            <path d="M10.8969 2.9999L18.9998 10.6977L10.8969 18.3955" stroke-width="4.19118" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="2.09559" y1="10.6977" x2="14.6691" y2="10.6977" stroke-width="4.19118" stroke-linecap="round"/>
+                        </svg>
+                    </li>
+                </ol>
+                <ol class="ho6 ho63">
+                    <li><img src="./img/ho63.png" alt="ho63"></li>
+                    <li><h3>Advertise on Paytm</h3></li>
+                    <li><p>Grow your business by advertising on India’s largest mobile business</p></li>
+                    <li><a href="#">Learn More</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="13" viewBox="0 0 22 21" fill="none">
+                            <path d="M10.8969 2.9999L18.9998 10.6977L10.8969 18.3955" stroke-width="4.19118" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="2.09559" y1="10.6977" x2="14.6691" y2="10.6977" stroke-width="4.19118" stroke-linecap="round"/>
+                        </svg>
+                    </li>
+                </ol>
+                <ol class="ho6 ho64">
+                    <li><img src="./img/ho64.png" alt="ho64"></li>
+                    <li><h3>Business Khata</h3></li>
+                    <li><p>Managing Khata made easy</p></li>
+                    <li><a href="#">Learn More</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="13" viewBox="0 0 22 21" fill="none">
+                            <path d="M10.8969 2.9999L18.9998 10.6977L10.8969 18.3955" stroke-width="4.19118" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="2.09559" y1="10.6977" x2="14.6691" y2="10.6977" stroke-width="4.19118" stroke-linecap="round"/>
+                        </svg>
+                    </li>
+                </ol>
+            </article>
+        </section>
+        <section class="home7">
+            <section class="hom71">
+                <article class="ho71">
+                    <img src="./img/money2.png" alt="ho71">
+                    <p>Get started on wealth creation journey with Zero brokerage fee & no hidden charges.</p>
+                    <a href="#">Learn More</a>
+                </article>
+                <ol>
+                    <li>
+                        <article class="wrap">
+                            <img src="./img/ho711.png" alt="ho711">
+                        </article>
+                        <h5>Invest in Stocks</h5>
+                    </li>
+                    <li>
+                        <article class="wrap">
+                            <img src="./img/ho712.png" alt="ho712">
+                        </article>
+                        <h5>Apply for IPO</h5>
+                    </li>
+                    <li>
+                        <article class="wrap">
+                            <img src="./img/ho713.png" alt="ho713">
+                        </article>
+                        <h5>Invest in ETFs</h5>
+                    </li>
+                    <li>
+                        <article class="wrap">
+                            <img src="./img/ho714.png" alt="ho714">
+                        </article>
+                        <h5>Buy Gold</h5>
+                    </li>
+                    <li>
+                        <article class="wrap">
+                            <img src="./img/ho715.png" alt="ho715">
+                        </article>
+                        <h5>Invest in Mutual Funds</h5>
+                    </li>
+                </ol>
+            </section>
+            <section class="hom72">
+                <article class="ho72">
+                    <img src="./img/travel.png" alt="ho72">
+                    <p>Best travel solutions with quick ticket bookings, great offers and easy refunds </p>
+                    <a href="#">Learn More</a>
+                </article>
+                <ol>
+                    <li>
+                        <img src="./img/ho721.png" alt="ho721">
+                        <h5>Flat 14% Cashback </h5>
+                        <p>With Code WELCOMEFLIGHT</p>
+                    </li>
+                    <li>
+                        <img src="./img/ho722.png" alt="ho722">
+                        <h5>100% Refund </h5>
+                        <p>With Paytm's Cancellation Protect</p>
+                    </li>
+                    <li>
+                        <img src="./img/ho723.png" alt="ho723">
+                        <h5>Flat 10% Cashback</h5>
+                        <p>With Code HAPPYBUS</p>
+                    </li>
+                    <li>
+                        <img src="./img/ho724.png" alt="ho724">
+                        <h5>Sanitised Bus Options With TravelSafe+</h5>
+                    </li>
+                    <li>
+                        <img src="./img/ho725.jpg" alt="ho725" style="border-radius: 50%;">
+                        <h5>Hassle Free Train Ticket Bookings</h5>
+                    </li>
+                </ol>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="f1">
+            <article class="fo fo1">
+                <h2>Download Paytm App to Pay from anywhere</h2>
+                <img src="./img/downloadApple.svg" alt="App store">
+                <img src="./img/downloadGoogle.svg" alt="Google Play">
+            </article>
+            <article class="fo fo2">
+                <img src="./img/twitter.svg" alt="twitter">
+                <img src="./img/instagram.svg" alt="instagram">
+                <img src="./img/facebook.svg" alt="facebook">
+            </article>
+        </section>
+        <article class="line"></article>
+        <section class="f2">
+            <div class="f">
+                <details>
+                    <summary>Investor Relations</summary>
+                    <p>hi</p>
+                </details>
+                <article></article>
+            </div>
+            <div class="f">
+                <details>
+                    <summary>More about Paytm</summary>
+                </details>
+                <article></article>
+            </div>
+            <div class="f f01">
+                <details>
+                    <summary>Company</summary>
+                </details>
+                <article></article>
+            </div>
+            <div class="f f02">
+                <a href="#">Career</a>
+                <article></article>
+            </div>
+            <div class="f f03">
+                <details>
+                    <summary>Recharge & pay bills</summary>
+                </details>
+                <article></article>
+            </div>
+            <div class="f f04">
+                <details>
+                    <summary>Pay Loan EMI, Insurance Premiums & Education Fee</summary>
+                </details>
+                <article></article>
+            </div>
+            <div class="f f05">
+                <details>
+                    <summary>Book Travel & Entertainment</summary>
+                </details>
+                <article></article>
+            </div>
+            <div class="f f06">
+                <details>
+                    <summary>Investments & Miscellaneous</summary>
+                </details>
+                <article></article>
+            </div>
+            <div class="f f07">
+                <details>
+                    <summary>Loans and Credit Cards</summary>
+                </details>
+                <article></article>
+            </div>
+            <div class="f f08">
+                <details>
+                    <summary>Financial Tools & Calculators</summary>
+                </details>
+                <article></article>
+            </div>
+        </section>
+        <section class="end">
+            <article></article>
+            <article></article>
+        </section>
+    </footer>
+</body>
+</html>

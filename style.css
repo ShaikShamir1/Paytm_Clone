@@ -1,0 +1,852 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+html::-webkit-scrollbar{
+    width: 0.4vw;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #00BAF2;
+    border-radius: 10px;
+}
+html::-webkit-scrollbar-track{
+    background-color: white;
+}
+header{
+    height: 13vh;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0,41,112,.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    /* margin-top: 3rem; */
+    top: 0;
+    background: #FFFFFF;
+    z-index: 10;
+}
+header .logo svg{
+    margin-left:9.5rem;
+}
+header nav li{
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 7px;
+}
+header nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+}
+nav{
+    margin-left: -12px;
+}
+header nav li:hover{
+    background-color: #F5F7FA;
+}
+.user a{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    height: 2.3rem;
+    width: 7rem;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #00BAF2;
+    position: relative;
+    margin-right: 9rem;
+}
+.user svg{
+    position: absolute;
+    right: 2px;
+}
+.user a:hover svg circle:first-child,.user a:hover{
+    background-color: #002970;
+    fill: #00BAF2;
+
+}
+.bar{
+    background: #f6f6f6;
+    height: 6.9vh;
+    text-align: center;
+    padding: 0.2rem 0;
+    font-size: 15px;
+}
+.bar span:nth-child(1){
+    font-weight: 600;
+    padding-right: 3.5px;
+}
+.bar span:nth-child(2){
+    font-size: 25px;
+    /* position: relative; */
+    /* top: 3px; */
+}
+.bar a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+/* ----------Main---------- */
+.home{
+    height: 98vh;
+    padding: 8rem 0 0 8.4rem;
+    position: relative;
+}
+.home img:first-child{
+    height: 5rem;   
+    box-shadow: 0 5px 20px rgba(0,41,112,.1);
+}
+.home img:last-child{
+    height: 70%;
+    position: absolute;
+    right: 0;
+    top: 7rem;
+}
+.container{
+    padding: 3rem 42rem 0 0;
+}
+.home h1{
+    font-size: 54px;
+    font-weight: 750;
+    line-height: 65px;
+    letter-spacing: 1px;
+}
+.home h5{
+    padding-top: 10px;
+    width: 475px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.pay_app{
+    font-size: 15px;
+    background-color: black;
+    color: white;     
+    padding: 0.5rem 0.5rem 0.7rem; 
+    width: 14rem;
+    border-radius: 50px;
+    text-align: center;
+}
+.pay_app a {
+    color: transparent;
+    margin-left: 2px;
+    
+}
+.pay_app svg{
+    fill: white;
+    height: 20px;
+    padding-top: 6px;
+}
+.pay_app:hover svg path,.pay_app:hover{
+    background: white;
+    color: black;
+    fill: black;
+    border: 1px solid;
+    cursor: pointer;
+}
+.home1{
+    height: 54vh;
+    background: #00BAF2;
+    color: white;
+    padding: 4rem 7.9rem;
+    line-height: 1.4rem;
+    position: relative;
+}
+.home1 h1{
+    font-size: 2.3rem;
+    margin-bottom: 2.5rem;
+}
+.home1 img{
+    height: 4rem;
+    margin-bottom: 0.5rem;
+}
+.home1 div{
+    margin-left: 2.5rem;
+    padding: 1rem 0;
+}
+.home1 li{
+    list-style: none;
+    padding: 0 2.5rem 0 1rem;
+}
+.home1 li span{
+    font-weight: 600;
+}
+.home1 span{
+    position: relative;
+    display: inline;
+}
+.home1 svg{
+    transform: rotate(90deg);
+    position: absolute;
+    top: -12px;
+}
+
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container1 div:hover{
+    background: #00AFE3;
+    border-radius: 15px;
+}
+.home2{
+    height: 50.6vh;
+    background: #0F4A8A;
+}
+.home2 li span{
+    font-weight: 800;
+}
+
+.home3{
+    height: 449.5vh;
+    background: #F5F7FA;
+    font-size: 33px;
+    padding: 7.5rem 11.4rem;
+}
+.home3>article{
+    margin: 2rem 0 3rem;
+    height: 92vh;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+}
+.more{
+    height: 3rem;
+    width: 10.5rem;
+    /* text-align: center; */
+    border-radius: 50px;
+    color: #fff;
+    background-color: #002970;
+    position: relative;
+}
+.more h6{
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding-top: 12px;
+    padding-left: 1.5rem;
+    transition: all ease 0.5s;
+}
+.more .line1{
+    height: 2px;
+    width: 8px;
+    position: absolute;
+    top: 1.4rem;
+    right: 1.7rem;
+    background-color: white;
+    transform: scaleX(0);
+    transition: all ease 0.2s;
+}
+.more svg{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    transition: all ease 0.2s;
+}
+.more:hover{
+    background-color: #00BAF2;
+}
+.more:hover .line1{
+    background-color: white;
+    transform: scaleX(1.2);
+}
+.more:hover svg{
+    transform: translateX(0.2rem) rotate(90deg);;
+}
+
+
+.ho3 img:first-child{
+    height: 4.9rem;
+    margin-bottom: 2.9rem;
+}
+.ho3 img:last-child{
+    height: 29rem;
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+}
+.ho3 h2{
+    font-size: 2.3rem;
+    padding: 0 3.5rem 2rem 0;
+}
+.ho3 p{
+    font-size: 18.5px;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+.ho3{
+    padding: 4.5rem 7rem 1.7rem 7.1rem;
+}
+.ho3 div:first-child{
+    width: 50%;
+}
+.ho3 div:last-child{
+    width: 50%;
+}
+.ho3 h4{
+    top: 6rem;
+    left: 13rem;
+    position: absolute;
+    font-size: 17px;
+    width: 6rem;
+}
+.h33 h2:nth-child(2){
+    padding-bottom: 0rem;
+}
+.h33 p{
+    line-height: 1.7rem;
+    padding-right: 1rem;
+}
+.home3 .card{
+    display: flex;
+    justify-content: space-between;
+}
+.ho3_1{
+    margin: 2rem 0 3rem;
+    height: 100vh;
+    width: 48%;
+    background: white;
+    border-radius: 20px;
+    padding: 4rem 3.5rem;
+}
+.card .h34 img:first-child{
+    height: 5rem;
+    margin-bottom: 1.5rem;
+}
+.card .h35 img:first-child{
+    margin-top: 3.4rem;
+    height: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+.ho3_1 h2{
+    font-size: 2.6rem;
+}
+.ho3_1 p{
+    font-size: 20px;
+    margin-top: 1.5rem;
+    line-height: 2rem;
+}
+.ho3_1 img:last-child{
+    height: 52%;
+    margin-top: 3.3rem;
+}
+
+.home4{
+    height: 352vh;
+    /* padding: 7rem 11.5rem; */
+}
+.hom4{
+    height: 88vh;
+    position: relative;
+}
+.home4>h1{
+    font-size: 49px;
+    padding: 7rem 0 1rem 11.5rem;
+}
+.ho41{
+    padding: 3rem 11.5rem 7rem;
+}
+.ho41 div:first-child img{
+    height: 2.2rem;
+    margin-bottom: 4rem;
+}
+.ho41 h2{
+    padding-right: 3.9rem;
+}
+
+.hom4 h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.hom4 p{
+    font-size: 1.3rem;
+    padding:0 2rem 2rem 0;
+}
+.hom4 div:first-child{
+    width: 33rem;
+}
+.hom4 div:last-child{
+    width: 31rem;
+
+}
+.hom4 .ima img{
+    height: 31rem;
+    position: absolute;
+    top: 2rem;
+    right: 10.7rem;
+}
+.ho42{
+    /* background: #F5F7FA; */
+    background: url(./img/money_background.jpg) no-repeat  ;
+    background-size: cover;
+}
+.ho42 div:first-child{
+    position: absolute;
+    top: 5rem;
+    right: 13rem;
+}
+.ho42 div:first-child img,.ho43 div:first-child img{
+    height: 3.5rem;
+}
+.ho42 h2{
+    padding:2rem 7rem 0 0;
+}
+.ho42 p{
+    padding:0 2rem 2rem 0;
+}
+.ho42 div:last-child{
+    position: absolute;
+    left: 0;
+}
+.ho42 div:last-child img{
+    height: 26rem;
+    top: 5rem;
+    left: 12rem;
+}
+
+
+.ho43 div:first-child{
+    position: absolute;
+    top: 6rem;
+    left: 11rem;
+}
+.ho43 h2{
+    padding:2.5rem 0 0.2rem 0;
+}
+.ho43 p{
+    padding:0 0.1rem 2rem 0;
+}
+.ho43 div:last-child img{
+    height: 27rem
+}
+
+.ho44{
+    background:#F5F7FA ;    
+    position: relative;
+}
+.ho44 div:first-child{
+    position: absolute;
+    top: 7.5rem;
+    right: 12rem;
+}
+.ho44 div:first-child img{
+    height: 3.5rem;
+    margin-bottom: 10px;
+}
+.ho44 h2{
+    font-size: 2.3rem;
+    padding:2rem 7rem 0 0;
+}
+.ho44 p{
+    padding-right: -2rem;
+    font-size: 1.1rem;
+    padding:0 10px 2rem 0;
+}
+.ho44 div:last-child{
+    position: absolute;
+    left: 0;
+}
+.ho44 div:last-child img{
+    height: 27rem;
+    top: 5rem;
+    left: 12rem;
+}
+
+
+/* Section 5 */
+.home5{
+    height: 200vh;
+    position: relative;
+    margin-top: 17.5rem;
+    display: flex;
+    
+}
+.home5>h6:first-child{
+    position: absolute;
+    top: 0.5rem;
+    left: 11.5rem;
+    height: 1rem;
+    font-size: 3rem;
+}
+.ho51{
+    position: absolute;
+    height: 88vh;
+    width: 76vw;
+    top: 5.5rem;
+    left: 11.2rem;
+    border-radius: 10px;
+    background: #F5F7FA;
+    display: flex;
+    padding: 5rem;
+}
+.ho51 div{
+    padding-right:15rem ;
+    padding-left: 2rem;
+}
+.ho51 h3{
+    font-size: 2.3rem;
+    padding: 8rem 7rem 1.5rem 0;
+}
+.ho51 p{
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    padding:0 2rem 2rem 0;
+}
+.ho51 img{
+    position: absolute;
+    height: 29rem;
+    right: 0;
+    top: auto;
+}
+.ho52{
+    position: absolute;
+    height: 70.5vh;
+    width: 76vw;
+    top: 47.5rem;
+    left: 11.2rem;
+    border-radius: 10px;
+    background: #F5F7FA;
+    display: flex;
+    padding: 5rem;
+}
+.ho52 div{
+    padding-right:15rem ;
+    padding-left: 2rem;
+}
+.ho52 h3{
+    font-size: 2.4rem;
+    padding: 3.8rem 7rem 1.5rem 0;
+}
+.ho52 p{
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    padding: 0 2rem 2rem 0;
+}
+.ho52 img{
+    position: absolute;
+    height: 21.5rem;
+    right: 0;
+    top: auto;
+}
+
+
+/* SECTION 6 */
+.home6{
+    height: 120vh;
+    padding: 1rem 11rem;
+}
+.home6 h2{
+    font-size: 2.5rem;
+    width: 28rem;
+}
+.hom6{
+    margin-top: 6rem;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.hom6 ol{
+    list-style-type: none;
+    /* width: 20rem; */
+    padding-right: 4.3rem;
+}
+.ho6 img{
+    height: 14rem;
+}
+.ho6 h3{
+    font-size: 1.6rem;
+    padding:3rem 4rem 3rem 0;
+}
+.ho63 h3{
+    padding:3rem 4rem 3rem 0;
+}
+.ho6 p{
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    padding:0 0.7rem 1rem 0;
+}
+.ho62 p,.ho63 p{
+    padding-right: 1.5rem;
+}
+.ho6 a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.ho6 li:last-child{
+    display: inline;
+}
+.ho6 svg{
+    position: relative;
+    left: -20px;
+    stroke: transparent;
+    top: 1px;
+    transition: all ease-in 0.2s;
+}
+.ho6 li:hover svg{
+    font-weight: 600;
+    font-size: 1.5rem;
+    stroke: black;
+    top: 1px;
+    left: 0;
+}
+
+/* SECTION 7 */
+.home7{
+    height: 140.5vh;
+}
+.hom71{
+    padding: 12rem 13rem 10rem 15rem;
+    display: flex;
+}
+.ho71{
+    padding-right: 1rem;
+}
+.ho71 p{
+    margin: 3.5rem 0 1rem;
+    line-height: 1.3rem;
+    width: 12rem;
+}
+.ho71 a{
+    text-decoration: none;
+    color: #00baf2;
+    font-size: 1.1rem;
+}
+.ho71 a:hover{
+    color: black;
+}
+.ho71 img,.ho72 img{
+    height: 3.7rem;
+}
+.hom71 ol{
+    display: flex;
+}
+.hom71 li{
+    list-style-type: none;
+    padding: 7.4rem 4.9rem;
+    margin-left: 2rem;
+    background-color: #00BAF2;
+    opacity: 70%;
+    border-radius: 10px;
+    position: relative;
+    transition: all ease 0.2s;
+}
+.hom71 li:hover{
+    opacity: 100%;
+}
+.wrap{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 10.3rem;
+    width: 9.2rem;
+    border-radius: 9px;
+    overflow: hidden;
+    border-color: transparent;
+}
+.wrap img{
+    height: 100%;
+    width: 100%;
+    transition: all ease 0.2s;
+
+}
+.wrap img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.hom71 li h5{
+    font-size: 1.1rem;
+    position: absolute;
+    color: #fff;
+    top: 11.5rem;
+    /* bottom: 1rem; */
+    left: 0.5rem;
+    right: 0.5rem;
+    padding: 0 0.7rem 0.5rem;
+    text-align: center;
+}
+
+.hom72{
+    padding: 0rem 13rem 12rem 15rem;
+    display: flex;
+}
+.ho72{
+    padding-right: 1rem;
+}
+.ho72 p{
+    margin: 3.5rem 0 1rem;
+    line-height: 1.3rem;
+    width: 12rem;
+}
+.ho72 a{
+    text-decoration: none;
+    color: #00baf2;
+    font-size: 1.1rem;
+}
+.ho72 a:hover{
+    color: black;
+}
+.hom72 ol{
+    display: flex;
+}
+.hom72 li{
+    list-style-type: none;
+    padding: 7.4rem 4.9rem;
+    margin-left: 2rem;
+    background-color: #00BAF2;
+    opacity: 70%;
+    border-radius: 10px;
+    position: relative;
+    transition: all ease 0.2s;
+}
+.hom72 li img{
+    position: absolute;
+    top: 1.6rem;
+    left: 0.8rem;
+    right: 0.4rem;
+    height: 4.4rem;
+    transition: all ease 0.2s;
+}
+.hom72 li:hover{
+    opacity: 100%;
+}
+.hom72 li h5{
+    font-size: 1.1rem;
+    position: absolute;
+    color: #fff;
+    top: 7.5rem;
+    left: 0.6rem;
+    right: 1rem;
+    text-align: left;
+}
+.hom72 li p{
+    position: absolute;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    top: 10.4rem;
+    left: 0.6rem;
+    line-height: 20px;
+}
+.hom72 li:nth-child(2) p{
+    top: 9rem;
+}
+
+/* FOOTER */
+footer{
+    height: 128vh;
+    background: #F5F7FA;
+    padding-top:5.5rem;
+    font-size: 0.82rem;
+}
+.f1{
+    padding:0 9rem 4rem;
+}
+.f1,.fo{
+    display: flex;
+    justify-content: space-between;
+}
+.fo1 h2{
+    width: 13rem;
+}
+.fo1{
+    width: 35rem;
+}
+.fo2 img{
+    margin-left:2rem;
+}
+
+.line{
+    height: 1px;
+    background: #CCCCCC;
+    margin: 0 8.5rem;
+    margin-bottom: 4rem;
+}
+
+.f2{
+    padding:0 9rem 150px;
+}
+.f2 summary{
+    color: #505050;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 0;
+    list-style-type: none;
+}
+.f2 a{
+    text-decoration: none;
+    color: #505050;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 0;
+    display: inline-block;
+}
+.f2 div{
+    position: relative;
+}
+.f{
+    position: relative;
+}
+/* .f img{
+    top: 1rem;
+    left: -0.2rem;
+    position: absolute;
+} */
+.f summary::before{
+    content: url(./img/plus.svg);
+    margin-right: 0.6rem ;
+}
+
+.f2 .f article{
+    border-bottom: 1px solid #CCCCCC;
+    width: 88%;
+    height: 10px;
+    right: 0;
+    top: 1.3rem;
+    position: absolute;
+}
+.f2 .f01 article{
+    width: 93%;
+}
+.f2 .f02 article{
+    width: 95.5%;
+}
+.f2 .f03 article{
+    width: 87%;
+}
+.f2 .f04 article{
+    width: 70%;
+}
+.f2 .f05 article{
+    width: 82.5%;
+}
+.f2 .f06 article{
+    width: 82.5%;
+}
+.f2 .f07 article{
+    width: 85.3%;
+}
+.f2 .f08 article{
+    width: 82.3%;
+}
+
+.end article:first-child{
+    background-color: #00BAF2;
+    height: 12px;
+    width: 100%;
+}
+.end article:last-child{
+    background-color: #002970;
+    height: 12px;
+    width: 100%;
+}
